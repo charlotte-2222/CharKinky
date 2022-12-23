@@ -1,10 +1,84 @@
+<!--
+Kinky Edit of my regular
+links page, few changes
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinky Links!</title>
+    <!-- Favicon -->
+    <link rel="icon" href="imgs/bottom.png" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-Hello World
+<!-- Parallax Pixel Background Animation -->
+<section class="animated-background">
+    <div id="stars1"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+</section>
+<!-- End of Parallax Pixel Background Animation -->
+
+<a id="profilePicture" href="#popup">
+    <img src="imgs/char_pfp_cropped.png" alt="Profile Picture">
+</a>
+
+<div class="overlay" id="popup">
+    <div class="popup">
+        <div class="popup-photo">
+            <a href="imgs/char_pfp_cropped.png" target="_blank">
+                <img src="imgs/char_pfp_cropped.png" alt="Profile Picture">
+            </a>
+        </div>
+        <div class="popup-quote">
+            You clicked me! Now come subscribe so you can see my tits!
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+    </div>
+</div>
+
+<div id="userName">
+    some shit here 🔞
+</div>
+
+<div id="links">
+    <a class="link" href="https://fans.ly/Char_on_e" target="_blank">
+        <i class="fa-solid fa-heart">&nbsp;&nbsp;</i>Fansly (18+)
+    </a>
+    <a class="link" href="https://twitter.com/CharKinky" target="_blank">
+        <i class="fa-brands fa-twitter">&nbsp;&nbsp;</i>Twitter (18+)
+    </a>
+    <a class="link" href="https://www.twitch.tv/charkinky" target="_blank">
+        <i class="fa-brands fa-twitch">&nbsp;&nbsp;</i>Twitch
+    </a>
+    <a class="link" href="https://www.charlottes-web.gay/" target="_blank">
+        <i class="fa-solid fa-mug-hot">&nbsp;&nbsp;</i>My (SFW) Blog
+    </a>
+</div>
+
+<!-- fixed spacing -->
+
+
+<div id="hashtag">
+    #TransRightsAreHumanRights
+</div>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+    kofiWidgetOverlay.draw('ayycharlotte', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Just the tip?',
+        'floating-chat.donateButton.background-color': '#83b0f1',
+        'floating-chat.donateButton.text-color': '#fff'
+    });
+</script>
 </body>
 </html>
